@@ -1,7 +1,5 @@
 html {
-  background-color: #1f0c21;
-  font-family: "Outfit", sans-serif;
-  color: #ffff;
+  font-size: 16px;
  
 }
 
@@ -18,7 +16,11 @@ html {
 
 
 body{
-  margin: 0px;
+  margin: 0;
+  background-color: #1f0c21;
+  font-family: "Outfit", sans-serif;
+  color: #fff;
+  overflow-x: hidden;
 }
 
 
@@ -49,7 +51,10 @@ margin: 0px 150px;
 
 
 .benef {
-  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 40px 0;
 }
 
 #beneficios {
@@ -62,6 +67,7 @@ margin: 0px 150px;
 
 .columna {
   flex-basis: 48%;
+  margin-bottom: 20px;
 }
 
 .beneficio {
@@ -104,6 +110,8 @@ margin: 0px 150px;
   background-color: #1f0c21;
   color: white;
   font-size: 30px;
+  position: relative;
+  text-align: center;
 }
 
 .linea-horizontal {
@@ -111,6 +119,7 @@ margin: 0px 150px;
   margin: 0 auto;
   align-items: center;
   margin-top: 20px;
+  position: relative;
 }
 
 .linea-horizontal > .linea-izquierda,
@@ -146,7 +155,7 @@ margin: 0px 150px;
 
 .formulario input[type="text"],
 .formulario input[type="email"],
-.formulario input[type="artista"],
+/*.formulario input[type="artista"],*/
 .formulario select {
   width: calc(100% - 10px);
   padding: 10px;
@@ -233,10 +242,6 @@ margin: 0px 150px;
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-
-
-
-
 .contenedor-rectangulo {
   margin-top: 20px;
 }
@@ -251,10 +256,6 @@ margin: 0px 150px;
 .rectangulo h1 {
   margin-bottom: 0px;
   margin-top: 0;
-}
-
-.columna {
-  flex-basis: 48%;
 }
 
 
@@ -316,3 +317,53 @@ padding: 0px 150px;
  .test1 {
   width: 90%;
 }
+
+
+
+
+
+
+
+
+
+
+.artista-politicas {
+  display: flex;
+  flex-direction: column;
+}
+
+
+@media screen and (max-width: 576px) {
+  header {
+    padding: 50px 20px;
+    align-items: center;
+  }
+
+  #tit, #sub, #btn-saber-mas {
+    margin: 20px 0;
+    margin-left: 20px;
+    text-align: left;
+  }
+}
+
+
+  @media screen and (max-width: 576px) {
+    .linea-horizontal > .linea-izquierda,
+    .linea-horizontal > .linea-derecha {
+      width: 20%;
+    }}
+
+
+    @media screen and (max-width: 576px) {
+      .titulostam {
+        font-size: 24px;
+      }}
+
+
+
+      .separador {
+        width: 4px;
+        height: 100%;
+        background-color: yellow;
+      }
+
