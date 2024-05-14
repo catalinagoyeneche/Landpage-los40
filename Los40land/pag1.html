@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 
 <head>
@@ -17,8 +16,6 @@
 </head>
 
 <body>
-
-
 
   <header>
     <nav class="row justify-between align-center">
@@ -39,7 +36,7 @@
     <h3 id="sub" style="margin-top: 10px;">Se el primero en enterarte de las últimas novedades de tu <br> artista
       favorito</h3>
 
-    <button id="btn-saber-mas" class="boton">QUIERO SABER MAS</button>
+      <a href="#formulario" class="boton" id="btn-saber-mas">QUIERO SABER MÁS</a>
   </section> <!-- portada -->
 
 
@@ -48,7 +45,7 @@
 
       <h1 class="titulostam">+Beneficios</h1>
 
-      <div id="beneficios">
+      <div id="beneficios" class="benef">
         <div class="separador"></div>
         <div class="columna">
           <div class="beneficio">
@@ -64,12 +61,14 @@
         <div class="columna">
           <div class="beneficio">
             <h3 class="titubeneficios">Recibe información exclusiva a tu mail.</h3>
-            <p class="textobenef">Conoce antes que nadie las noticias de tus artistas preferidos, sus shows y eventos
+            <p class="textobenef">Conoce antes que nadie las noticias de tus artistas preferidos, sus shows
+              y eventos
             </p>
           </div>
           <div class="beneficio">
             <h3 class="titubeneficios">Forma parte de increíbles sorteos mensuales.</h3>
-            <p class="textobenef">Participa por grandes premios como entradas, merch, autógrafos, entre otras cosas.</p>
+            <p class="textobenef">Participa por grandes premios como entradas, merch, autógrafos, entre
+              otras cosas.</p>
           </div>
         </div>
       </div>
@@ -106,14 +105,60 @@
         </div>
         <div class="col">
           <h1 class="titulanzamiento">Últimos lanzamientos</h1>
-          <h5 class="sublanzamiento">Conoce la nueva música que está marcando tendencia y sorprendiendo a todos</h5>
+          <h5 class="sublanzamiento">Conoce la nueva música que está marcando tendencia y sorprendiendo a
+            todos</h5>
         </div>
       </div>
     </div>
   </section>
 
 
-  
+
+  <section>
+    <div class="linea-horizontal row">
+      <div class="linea-izquierda col"></div>
+      <div class="col" id="titulo-formulario">
+        <h2>Entrevistas Los40</h2>
+      </div>
+      <div class="linea-derecha col"></div>
+    </div>
+    <div id="Entrevistas" class="entrev">
+      <div class="row justify-arround">
+        <div class="card">
+        <img src="imagenes/nicki.png" alt="" style="margin-right: 80; width: 267px ; height: 390px;">
+        <div class="card-footer"> <h5> NICKI NICOLE:</h5> 
+        <p> El mensaje que le dejo a Peso Pluma: "Querela a ella".</p></div>
+      </div>
+      <div class="card">
+        <img src="imagenes/louis.png" alt="" style="margin-right: 80; width: 267px; height: 390px;">
+        <div class="card-footer"> <h5>LOUIS TOMLINSON:</h5> <P> El encuentro con sus fans en su paso por Argentina.</P></div>
+      </div>
+      <div class="card">
+        <img src="imagenes/dillomm.png" alt="" style="margin-right: 80;width: 267px; height: 390px;">
+        <div class="card-footer"> <h5>DILLOM:</h5> <P> Todo sobre su ultimo album (por cesarea).</P></div>
+      </div>
+    </div>
+    <div class="row justify-arround">
+      <div class="card">
+        <img src="imagenes/ysy.png" alt="" style="margin-right: 80;width: 267px; height: 390px;">
+        <div class="card-footer"> <h5>YSY A:</h5> <p>Nos cuenta todo sobre su ultimo disco "Rdio Club Hits".</p></div>
+      </div>
+      <div class="card">
+        <img src="imagenes/feid.jpg" alt="" style="margin-right: 80;width: 267px; height: 390px;">
+        <div class="card-footer"><h5>FEID:</h5> <p>Maximo ganador junto a Karol G de los Latin American Music Awards.</p></div>
+      </div>
+      <div class="card">
+        <img src="imagenes/maria.png" alt="" style="margin-right: 80;width: 267px; height: 390px;">
+        <div class="card-footer"> <h5>MARIA BECERRA:</h5> <P>El backstage de sus show en river.</P></div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+
+
+
+
   <!-- formulario -->
   <div class="linea-horizontal row">
     <div class="linea-izquierda col"></div>
@@ -145,7 +190,7 @@
       <label for="email">Email:<span class="obligatorio">*</span></label>
       <input type="email" id="email" name="email" placeholder="Campo obligatorio" required>
     </div>
-    <div>
+    <div class="artista-politicas">
       <div>
         <label for="artista">Artista favorito:</label>
         <select type="artista" id="artista" name="artista">
@@ -162,13 +207,60 @@
         <input type="checkbox" id="politicas" name="politicas" required>
         <label for="politicas">Acepto las Políticas de Privacidad <span class="obligatorio">*</span></label>
       </div>
-      <div class="center">
-        <button type="submit" class="boton">QUIERO ACCEDER</button>
-      </div>
+    </div>
+    <div class="button-container center">
+      <button type="submit" class="boton">QUIERO ACCEDER</button>
+    </div>
   </form>
 
   <script src="./land.js"></script>
 
   <!-- formulario -->
+
+
+
+
+  <footer>
+    <div class="contenedor-rectangulo">
+      <section class="ff">
+
+
+
+        <div class="linea-horizontal row">
+          <div class="linea-izquierda col"></div>
+          <div class="col" id="titulo-formulario">
+            <div class="">
+              <h4 class="titulo footer" style="font-size: 30px; font-weight: lighter; text-align: center;">Sigue a
+                Los40Ar en </h4>
+            </div>
+
+          </div>
+          <div class="linea-derecha col"></div>
+        </div>
+
+
+
+
+        <div class="redessociales">
+          <ul class="row">
+
+            <li> <img src="imagenes/facebook.svg" alt=""></li>
+            <li><img src="imagenes/instagram.svg" alt=""></li>
+            <li><img src="imagenes/tiktok.svg" alt=""></li>
+            <li> <img src="imagenes/twitter-x.svg" alt=""></li>
+            <li><img src="imagenes/youtube.svg" alt=""></li>
+
+          </ul>
+        </div>
+    </div>
+
+
+
+    </section>
+
+
+
+
+  </footer>
 
 </html>
